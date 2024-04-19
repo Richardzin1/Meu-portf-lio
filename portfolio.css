@@ -1,0 +1,599 @@
+/* Estilo Geral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.rcd-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+h2.titulo {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span {
+  color: #00ff08;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #00ff08;
+  transform: scale(1.05);
+}
+
+/* Estilo do cabeçalho */
+
+header {
+  padding: 40x 4%;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+/*comeco font*/
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*Fim da font*/
+
+.menu-desktop {
+  margin-right: 20px; /* Adiciona espaçamento à direita */
+}
+
+.menu-desktop ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.menu-desktop ul li {
+  display: inline-block; /* Exibe os itens do menu em linha */
+  margin-right: 80px; /* Adiciona espaçamento entre os itens */
+}
+
+.menu-desktop ul li:last-child {
+  margin-right: 0; /* Remove o espaçamento à direita do último item */
+}
+    
+/*Estilo do menu mobile*/
+
+.rcd-abrir-menu{
+  display: none;
+}
+
+.rcd-abrir-menu i{
+  color: #00ff08;
+  font-size: 40px;
+
+}
+
+.menu-mobile .rcd-fechar {
+  padding: 20px 5%;
+}
+
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+  .menu-mobile.abrir-menu ~ .overlay-menu{
+   display: block;
+  }
+
+.menu-mobile .rcd-fechar i{
+   color: #00ff08;
+   font-size: 30px;
+}
+
+.menu-mobile{
+   background-color: #000;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 99999;
+   width: 0%;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.menu-mobile nav ul {
+   text-align: right;
+}
+
+.menu-mobile nav ul  li a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+}
+
+.menu-mobile nav ul  li a:hover{
+  background-color: #00ff08;
+  color: #000;
+}
+
+  .overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+
+  }
+
+/*Estilo do topo do site*/
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 30px;
+  }
+}
+
+.topo-do-site .img-topo-site img {
+  height: 500px;
+  height: 500px;
+  border-radius: 70%;
+  border: 5px solid #00ff08;
+}
+
+/*ESTILO DAS ESPECIALIDADES*/
+section.especialidades {
+  padding: 40px 4%;
+}
+
+section.especialidades .flex {
+  gap: 60px;
+}
+
+.especialidades .especialidades-box {
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff78;
+}
+
+.especialidades .especialidades-box i {
+  font-size: 70px;
+  color: #00ff08;
+}
+
+.especialidades .especialidades-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+/*Estilo do sobre*/
+
+section.sobre {
+  padding: 80px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+
+.sobre .txt-sobre {
+  color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .img-sobre img {
+  border-radius: 20px;
+
+}
+
+.sobre .txt-sobre h2 span {
+  color: #00ff08;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px;
+  text-align: justify;
+}
+
+.rcd-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff08;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: .2s;
+}
+
+/*ESTILO DO PORTFOLIO*/
+
+section.portfolio {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+section.portfolio .flex {
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+}
+
+/*ESTILO DO FORMULARIO DE CONTATO*/
+
+section.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #242424;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+form input::placeholder {
+  color: red;
+}
+
+form textarea::placeholder {
+  color: red;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #00ff08;
+  color: black;
+  font-size: 700;
+  cursor: pointer;
+}
+
+/* Estilo do rodapé */
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .line-footer{
+  padding: 20px 0;
+}
+
+.borda {
+  border-top: 2px solid #00ff08;
+  padding: 20px 0;
+}
+
+footer .line-footer p i {
+  color: #00ff08;
+  font-size: 22px;
+}
+
+footer.line-footer p a {
+  color: #fff;
+}
+
+.interface .rcd-social {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1020px) {
+
+  /*CLASSES GERAIS*/
+
+  h2.titulo {
+    font-size: 34px;
+    line-height: 30px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  /* cabeçalho*/
+  .menu-desktop,
+  .rcd-contato {
+    display: none;
+  }
+
+  /*TOPO DO SITE*/
+
+  section.topo-do-site .flex {
+    gap: 40px;
+  }
+
+  section.topo-do-site {
+    padding: 20px 8%;
+  }
+
+
+  .topo-do-site h1 {
+    font-size: 30px;
+  }
+
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+  }
+
+  /*ESTILO DAS ESPECIALIDADES*/
+  section.especialidades {
+    padding: 40px 8%;
+  }
+      /* SOBRE */
+
+  section.sobre {
+    padding: 80px 8%;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .rcd-social{ 
+    text-align: center;
+  }
+  
+  .img-sobre img{
+    width: 100%;
+  }
+
+      /* PORTIFOLIO */
+      .section.portfolio {
+        padding: 80px 8%;
+      }
+
+      .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      section.portfolio .flex {
+        gap: 60px;
+      }
+       /*RODA PÉ  */
+      footer .flex {
+       flex-direction: column;
+       gap: 30px;
+      }
+
+      footer .line-footer{
+        text-align: center;
+      }
+      
+      .rcd-abrir-menu{
+        display: block;
+    }
+      
+}
